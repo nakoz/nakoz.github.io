@@ -787,13 +787,13 @@ body.wysiwyg {
 #bookmark-header:hover,
 #bookmark-header.selected
 {
-    background-color: #103041;
 }
 
 #bookmark-details
 {
     font-size: 12px;
-    background-color: black;
+    background-color: white;
+    border: 1px solid black;
 }
 
 #bookmark-details a
