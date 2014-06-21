@@ -73,18 +73,15 @@ body {
 
 #account-header:hover
 {
-    background-color: #103041;
 }
 
 #account-header.selected
 {
-    background-color: #103041;
 }
 
 #account-details
 {
     font-size: 12px;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
     line-height: 16px;
 }
 
@@ -192,9 +189,6 @@ h3 {
 .campaigns {
     /* border styling */
     border: 2px solid;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
 
     /* internal styling - padding etc. */
 
@@ -371,7 +365,6 @@ h3 {
 
     font-size: 12px;
     font-weight: lighter;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
     text-align: right;
 }
 
@@ -393,14 +386,6 @@ h3 {
     color: red;
 }
 
-.game-content form,
-.game-content h2 {
-    /* internal styling - padding etc. */
-
-    /* colors */
-    color: #fff;
-}
-
 .game-content h2 {
     /* colors */
     background-color: #000000;
@@ -408,7 +393,6 @@ h3 {
 
 .game-content h3 {
     font-size: 20px;
-    color: #fff;
 }
 
 .game-content form {
@@ -719,7 +703,8 @@ td.news-province-modification {
     margin: 0px 2px;
     padding: 6px 6px 1px 6px;
 
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -733,8 +718,6 @@ td.news-province-modification {
 .game-header a h1:hover
 {
     background: gray; /* Old browsers */
-
-    color: #fff;
 }
 
 .game-content {
@@ -776,8 +759,7 @@ td.news-province-modification {
 
 .game-content tbody tr:nth-child(even) {
     /* display, opacity and special effects*/
-    background: rgb(48, 48, 48);
-    background: rgba(48, 48, 48, 0.2);
+    background: rgb(230, 230, 230)
 }
 
 .game-content tbody tr.sub-total {
@@ -836,7 +818,6 @@ div.wysiwyg ul.toolbar li {
 }
 
 body.wysiwyg {
-    color: #fff;
     background: #2B3849; /* Old browsers */
     font-size: 12px;
 }
