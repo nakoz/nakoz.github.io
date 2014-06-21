@@ -548,8 +548,7 @@ div.uploader span.action {
 }
 .game-content form tbody tr:nth-child(even) {
     /* display, opacity and special effects*/
-    background: rgb(48, 48, 48);
-    background: rgba(48, 48, 48, 0.6);
+    background: rgb(230, 230, 230)
 }
 
 /* KINGDOM NEWS */
@@ -796,11 +795,11 @@ td.news-province-modification {
 
 /* GAME PREFERENCES */
 .game-content div.preference-box {
-    background-color: #400000;
+    background: rgb(230, 230, 230)
 }
 
 .game-content div.preference-box.disabled {
-    background-color: #444;
+    color: gray;
 }
 
 div.wysiwyg {
