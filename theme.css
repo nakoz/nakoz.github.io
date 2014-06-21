@@ -26,19 +26,10 @@ body {
 }
 
 .navigation {
-    /* border styling */
-    border: 1px solid;
-    border-top: none;
-    border-bottom: none;
-    /* internal styling - padding etc. */
-
      /* typography */
     font-size: 16px;
     font-weight: normal;
     text-align: left;
-
-    /* colors */
-    border-color: #103041;
 }
 
 .navigation a {
