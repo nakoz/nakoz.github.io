@@ -814,6 +814,7 @@ div.wysiwyg ul.toolbar li {
 
 body.wysiwyg {
     font-size: 12px;
+    background-color: white;
 }
 
 #bookmark-header {
