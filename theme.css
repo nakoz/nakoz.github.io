@@ -75,6 +75,8 @@ body {
 {
     font-size: 12px;
     line-height: 16px;
+    background-color: white;
+    border: 1px solid black;
 }
 
 #account-details .account-title
