@@ -335,8 +335,7 @@ h3 {
 #resource-bar
 {
     /* border styling */
-    border-collapse: separate;
-    border-spacing: 3px 3px;
+    border-collapse: collapse;
 
     /* internal styling - padding etc. */
     padding: 3px 6px 3px 6px;
@@ -344,35 +343,15 @@ h3 {
     /* colors */
 }
 
-#resource-bar thead {
-}
-
-#resource-bar thead th {
-    /* internal styling - padding etc. */
-    padding: 3px 6px 3px 6px;
-
-    font-weight: normal;
-}
 
 #resource-bar tbody th,
 #resource-bar tbody td{
 
-    padding: 3px 6px 3px 6px;
-
     font-size: 12px;
     font-weight: lighter;
     text-align: right;
+    border: 1px solid black;
 }
-
-#resource-bar tbody th {
-}
-
-#resource-bar tbody td {
-}
-
-#resource-bar thead th {
-}
-
 
 #resource-bar .positive {
     color: green;
@@ -692,7 +671,6 @@ td.news-province-modification {
 
 .game-header h1
 {
-    height: 20px;
     margin: 0px 2px;
     padding: 6px 6px 1px 6px;
 
@@ -705,12 +683,7 @@ td.news-province-modification {
 }
 
 .game-header a:hover {
-    text-decoration: none;
-}
-
-.game-header a h1:hover
-{
-    background: gray; /* Old browsers */
+    text-decoration: underline;
 }
 
 .game-content {
