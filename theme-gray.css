@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Ubuntu Condensed';
+    src: url('./fonts/Ubuntu-C.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: white;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+
+/* HEADER */
+#header-logo { background: url(./images/logo_header.png) no-repeat top left; width: 350px; height: 82px; display: block; position: absolute; }
+#header { height: 83px;}
+#header-navigation { width: 500px; text-align: right; margin-left: 135px;}
+#header-navigation div { font-size: 16px; border: 1px solid #555; margin-top: 15px; background: #333; }
+#header-navigation div:hover a  { background: #333; color: white; background: #333;}
+#header-navigation a  { background: #333; color: white; }
+
+/* LEFT NAVIGATION */
+#game-navigation .navigation    { font-size: 16px; font-weight: normal; text-align: left; 
+border: 1px solid #555; padding: 0; margin: 0px 0px 10px 0px; background: #333; }
+#game-navigation .navigation a { display: block; padding: 4px 6px; margin: 0; border-right: none; text-decoration: none; color: #fff; }
+#game-navigation .navigation a:hover, .navigation a:active, .navigation a:focus  { color: #fff !important; background: #666; }
+
+
+
+#account-container { margin-top: 5px; font-size: 16px; }
+#account-header .account-image { background: url(./images/anonymous_small.png) no-repeat top left; 
+    border-bottom-left-radius: 2px 2px; -moz-border-radius-bottomleft: 2px 2px; }
+#account-header { margin-top: 15px; background-color: #333; }
+#account-header:hover {}
+#account-header.selected { color: white; }
+
+#account-details { margin-top: 15px; font-size: 12px; line-height: 16px; background-color: black; border: 1px solid white; background-color: #333; }
+#account-details .account-title { font-size: 16px; font-weight: bolder; border-bottom: 1px solid #103041; }
+#account-details .alert a { color: white; }
+#account-details a { color: white; }
+#account-details a:hover { text-decoration: underline; }
+#account-details .account-summary {}
+#account-details .account-signout { border-top: 1px solid #103041; font-weight: bold; text-align: right; }
+
+#middle {}
+
+a { color: Gold; text-decoration: none; }
+a.highlighted { color: #E68910; }
+a:focus, a:hover { text-decoration: underline; }
+
+h1, h2, h3 { color: white; font-weight: normal; }
+
+#footer { color: #4d5355; font-size: 10px; }
+
+.report-this { color: gold; background-color: #18100e; border-bottom-left-radius: 8px 8px;
+    -moz-border-radius-bottomleft: 8px 8px;
+    -moz-box-shadow: 0px 3px 4px #000;
+    -webkit-box-shadow: 0px 3px 4px #000;
+    box-shadow: 0px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+}
+
+.report-this:hover { color: gold; background-color: #2a201d; }
+.reported-content { border: 2px inset #616161; background-color: #000000; }
+
+.overlay
+{
+    background-color: #2f2e2e;
+    border:1px solid #666;
+    box-shadow:0 0 90px 5px #000;
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+
+.overlay .close { background-image:url("./images/overlay-close.png"); }
+
+.age-changes, .lobby-panel, .campaigns { border: 2px solid; border-color: #555555; background-color: #333; }
+.lobby-panel h1 { font-size: 25px; line-height: 25px; color: white; }
+.lobby-panel h1 a { color: gold; }
+.lobby-panel h1 a:hover {}
+.divider {}
+.divider-small {}
+
+.lobby-panel table th { font-size: 14px; }
+.lobby-panel table td { font-size: 12px; }
+.lobby-panel h2 { font-size: 18px; line-height: 24px; }
+.age-changes h3, .campaigns h3 { font-size: 18px; line-height: 22px; }
+.recruitment-campaigns h1, .race-changes h1, .trait-changes h1 { font-size: 30px; line-height: 35px; }
+.race-changes h2, .trait-changes h2 { font-size: 25px; }
+.campaigns .basic-details .campaign-summary h2{ font-size: 14px; }
+.campaigns .basic-details .campaign-summary .highlight-keyword{ font-size: 18px; }
+
+.good { color: #90ee90; }
+.bad { color: red; }
+.message { font-weight: bold; line-height: 1.5em; }
+.good.message { border: 1px solid #555; background-color: #659D32; color: white; }
+.bad.message { border: 1px solid #333; background-color: #880000; color: white; }
+.info.message {background-color: #C46500; color: white; }
+
+
+/* User profile page
+-------------------------------------------------------------- */
+.lobby-panel .statement { background: url('./images/province_profile/scroll.png') no-repeat; }
+.lobby-panel .statement h2 { line-height: 16px; }
+
+.advice-message { color: #fff !important; }
+.navigation a span.advice-message:after { content: ' NEW'; font-weight: bold; }
+.warning { color: #e55700; }
+.error { color: #e55700; }
+
+
+#game-navigation .current-date { font-family: Ubuntu Condensed; margin-top: 2px; padding: 13px 0px; font-size: 18px;
+	border: 1px solid #555;	background: #333; }
+
+#resource-bar { border: 2px solid; border-radius: 2px; border-color: #2E2F2F; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+    font-family: Ubuntu Condensed; font-size: 16px;
+    -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
+    -webkit-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68; }
+#resource-bar thead { background: #222; color: gold; line-height: 20px; text-align: center; padding: 3px 8px 3px 8px; 
+font-size: 15px }
+#resource-bar thead th { font-weight: normal; }
+#resource-bar tbody th, #resource-bar tbody td{ width: 98px; border-right: 1px inset #222; border-bottom: 1px inset #222;
+    background: #444; padding: 3px 8px 3px 8px; font-size: 12px; font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    text-align: center; color: #fff; }
+#resource-bar tbody th { font-size: 12px; font-weight: bolder; }
+#resource-bar thead th { width: 98px; border-right: 1px inset #222; border-bottom: 1px inset #222; }
+
+#resource-bar .positive { color: #87ac24; /* GOODGREEN #87ac24 */ }
+#resource-bar .negative { color: #ea5050; /* BADRED #ea5050 */ }
+
+.game-content h2 { background-color: #222; }
+.game-content h3 { font-size: 20px; }
+.game-content form { font-size: 12px; font-weight: bolder; }
+
+form ul.errorlist { color: #ea5050; }
+
+.game-content form.change-kingdom { font-size: 14px; }
+.game-content form.change-kingdom .change-kingdom-heading { margin-top: 10px; font-size: 20px; font-family: Ubuntu Condensed; 
+line-height: 24px; }
+.game-content form.change-kingdom .change-kingdom-nav a { width: 80px; }
+.game-content form.change-kingdom #royal-commands { border-top: 1px dotted #3B4041; }
+.game-content form.change-kingdom #royal-commands table tbody td { font-weight: normal; }
+.game-content form.change-kingdom .change-kingdom-form { width: 210px; font-size: 20px; }
+.game-content form.change-kingdom.change-kingdom-target { border-top: 1px solid; border-color: #555; }
+
+form input[type=text],
+form input[type=password] {
+    border-width: 1px;
+    border-color: #d7d7d7;
+    padding-left: 3px;
+    font-size: 12px;
+    text-align: left;
+
+    color: #000;
+    background: #fff;
+}
+
+textarea { color: #000; background: #fff; }
+form .formatted-text { color: #000; background: #fff; }
+form input[type=text], form input[type=password] { height: 16px; font-size: 12px; }
+form .errorlist { font-size: 12px; }
+form input[type=submit], .button-link { border: 1px solid; padding: 3px 3px 3px 3px; border-radius: 4px;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; font-size: 12px; font-weight: normal; 
+    background-color: #D8D8D8; color: #000; }
+
+form input[type=submit]:hover, .button-link:hover { background-color: #F2F2F2; text-decoration: none; }
+form input[type=submit]:active, .button-link:active { background-color: #F2F2F2; }
+
+div.selector span,
+div.uploader span.filename,
+div.uploader span.action
+{
+    padding-left: 5px;
+    /* typography */
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+div.uploader span.filename, div.uploader span.action { font-size: 12px; }
+div.uploader span.action { background: transparent; color: #000; }
+.game-content form table { margin-bottom: 10px; text-align: left; }
+.game-content form table thead th { font-weight: normal; font-size: 14px; text-align: center; vertical-align: bottom; }
+.game-content form tbody th {}
+.game-content form tbody th:first-child { border-left: none; }
+.game-content form tbody td { padding-right: 20px; font-size: 12px; text-align: center; }
+.game-content form tbody tr { border: none; }
+.game-content form tbody tr:nth-child(even) { background: #555; }
+
+
+/* KINGDOM NEWS */
+.news-legend span.news-aid:before { content: url(./images/kingdom_news/aid_inline.png); }
+.news-legend span.news-intra-kingdom-conflict:before { content: url(./images/kingdom_news/intra_kingdom_conflict_inline.png); }
+.news-legend span.news-actions-against-our-kingdom:before { content: url(./images/kingdom_news/actions_against_our_kingdom_inline.png); }
+.news-legend span.news-actions-by-our-kingdom:before { content: url(./images/kingdom_news/actions_by_our_kingdom_inline.png);}
+.news-legend span.news-dragon:before { content: url(./images/kingdom_news/dragon_inline.png); }
+.news-legend span.news-obituaries:before { content: url(./images/kingdom_news/obituaries_inline.png); }
+.news-legend span.news-relations:before { content: url(./images/kingdom_news/relations_inline.png); }
+.news-province-modification:before { content: url(./images/kingdom_news/province_modification_inline.png); }
+
+td.news-aid { background-image: url(./images/kingdom_news/aid.png); }
+td.news-intra-kingdom-conflict { background-image: url(./images/kingdom_news/intra_kingdom_conflict.png); }
+td.news-actions-against-our-kingdom { background-image: url(./images/kingdom_news/actions_against_our_kingdom.png); }
+td.news-actions-by-our-kingdom { background-image: url(./images/kingdom_news/actions_by_our_kingdom.png); }
+td.news-dragon { background-image: url(./images/kingdom_news/dragon.png); }
+td.news-obituaries { background-image: url(./images/kingdom_news/obituaries.png); }
+td.news-relations { background-image: url(./images/kingdom_news/relations.png); }
+td.news-province-modification { background-image: url(./images/kingdom_news/province_modification.png); }
+
+
+/* KINGDOM DETAILS */
+.unused-slot { color: #B0B0B0; }
+.protected, .intel-fresh { color: #99ffbb; }
+.monarch, .at-war, .intel-rotten { color: #F28585; }
+.chamberlain, .intel-stale { color: #FFC583; }
+.you { font-weight: bold; }
+.slot-number { font-size: 0.8em; color: #B0B0B0; }
+
+.provinces-legend { font-size: 0.8em; }
+.provinces-legend .invitations { font-size: 1.2em; }
+
+.dip-status { color: #000; }
+.dip-status-NORMAL { background-color: #01DF01; }
+.dip-status-UNFRIENDLY { background-color: #FFBF00; }
+.dip-status-HOSTILE { background-color:#FF4000; background-image: url(./images/hostile_meter/hostile_gradient.png); background-repeat:repeat-y; }
+.dip-status-WAR { background-color: #FF0000; }
+.own-meter-value { background-image: url(./images/hostile_meter/up.png); }
+.their-meter-value { background-image: url(./images/hostile_meter/down.png); }
+.war-button-meter-value { background-image: url(./images/hostile_meter/war.png); }
+
+#hostility-meter-example { background-image: url(./images/hostile_meter/example.png); }
+#id_taunt_top_image { color: white; }
+
+
+/* Province profile page
+-------------------------------------------------------------- */
+
+.province-flag .flagpole { background: url('./images/province_profile/flagpole.png') no-repeat; }
+.province-flag .flag-image .default-flag { background: url('./images/province_profile/default_flag.png') no-repeat; }
+.motto 			{ background: url('./images/province_profile/scroll.png') no-repeat; }
+
+.game-header 		{ height: 30px; border-bottom: 0px solid #6b6348; }
+.game-header h1		{ height: 22px; margin: 0px 1px; padding: 6px 18px 1px 18px; font-size: 18px; text-decoration: none; font-family: Ubuntu Condensed; background: #ccc; color: #000; }
+.game-header a h1 	{ background: #545555; }
+.game-header a h1:hover { background: #1E1E1E; color: #fff; }
+
+
+.game-content {
+    border: 0px solid; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; background: #444;
+    border-color: #333;
+    -moz-box-shadow:    0px -1px 1px #fffbf1,
+                                    inset 0px 1px 2px #000,
+                                    inset 0px -1px 1px #fffbf1,
+                                    0px 1px 1px #000,
+                                    -1px 0px 2px #000,
+                                    inset 1px 0px 1px #fffbf1,
+                                    inset -1px 0px 2px #000,
+                                    1px 0px 1px #fffbf1;
+    -webkit-box-shadow: 0px -1px 1px #fffbf1,
+                                        inset 0px 1px 2px #000,
+                                        inset 0px -1px 1px #fffbf1,
+                                        0px 1px 1px #000,
+                                        -1px 0px 2px #000,
+                                        inset 1px 0px 1px #fffbf1,
+                                        inset -1px 0px 2px #000,
+                                        1px 0px 1px #fffbf1;
+    box-shadow:     0px -1px 1px #fffbf1,
+                                inset 0px 1px 2px #000,
+                                inset 0px -1px 1px #fffbf1,
+                                0px 1px 1px #000,
+                                -1px 0px 2px #000,
+                                inset 1px 0px 1px #fffbf1,
+                                inset -1px 0px 2px #000,
+                                1px 0px 1px #fffbf1;
+}
+
+.game-content h2 {
+    margin-top: 18px;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-color: #333;
+    -moz-box-shadow:    0px -1px 1px #fffbf1,
+                                    inset 0px 1px 2px #000,
+                                    inset 0px -1px 1px #fffbf1,
+                                    0px 1px 1px #000;
+    -webkit-box-shadow: 0px -1px 1px #fffbf1,
+                                    inset 0px 1px 2px #000,
+                                    inset 0px -1px 1px #fffbf1,
+                                    0px 1px 1px #000;
+    box-shadow:         0px -1px 1px #fffbf1,
+                                    inset 0px 1px 2px #000,
+                                    inset 0px -1px 1px #fffbf1,
+                                    0px 1px 1px #000;
+
+    line-height: 34px;
+    font-size: 22px;
+    font-family: Ubuntu Condensed;
+
+}
+
+.game-content thead th {
+    font-family: Ubuntu Condensed; font-weight: normal; font-size: 16px;
+    text-align: center; background: #2E2F2F; 
+}
+
+.game-content tbody th { border-left: 6px ridge rgba(48, 48, 48, 0.4); font-family: Ubuntu Condensed; font-size: 14px; }
+.game-content tbody th:first-child { border-left: none; }
+.game-content tbody td { padding-right: 20px; }
+.game-content tbody tr { border-bottom: 2px groove rgba(48, 48, 48, 0.4); border-top: 2px groove rgba(48, 48, 48, 0.4); }
+.game-content tbody tr:nth-child(even) { background: rgb(48, 48, 48); background: rgba(48, 48, 48, 0.7); }
+.game-content tbody tr.sub-total { background: none; }
+.game-content tr.sub-total td { border-top: 2px solid #B9B9B9; padding-bottom: 25px; }
+.game-content table.schedule { font-size:0.8em; }
+
+.two-digit-input { width: 30px; }
+.three-digit-input { width: 40px; }
+.four-digit-input { width: 50px; }
+.five-digit-input { width: 60px; }
+.six-digit-input { width: 70px; }
+
+/* GAME PREFERENCES */
+.game-content div.preference-box { background: #333; }
+.game-content div.preference-box.disabled { background: #555; }
+
+div.wysiwyg { border: 0px solid #999; padding: 5px; }
+div.wysiwyg ul.toolbar li { border: 0px outset black; }
+body.wysiwyg { font-size: 12px; background: white; color: black; }
+
+#bookmark-header {
+    background-image: url(./images/silver_star.png);
+    background-repeat: no-repeat;
+    background-position: center 3px;
+}
+#bookmark-header:hover, #bookmark-header.selected {}
+#bookmark-details { font-size: 12px; background-color: white; border: 1px solid black;}
+#bookmark-details a { text-decoration: none; }
+#bookmark-details #bookmarks { border-top: 1px solid #103041; border-bottom: 1px solid #103041; }
+
+#royal-command-icon { background-image: url(./images/silver_crown.png); background-repeat: no-repeat; background-position: center 3px; }
+#royal-command-icon:hover { background-color: #103041; }
+
+.tablesorter th .order-icon { background-image: url(./images/order_none.png); }
+.tablesorter th.headerSortUp .order-icon { background-image: url(./images/order_asc.png); }
+.tablesorter th.headerSortDown .order-icon { background-image: url(./images/order_desc.png);}
+
+.campaign-meter-level div { border: 1px solid green; }
+.campaign-meter-level div.full { background-color: green;}
+.campaign-meter-level div.unknown { color: green; }
+
+.fails-criteria div { border: 1px solid red; }
+.fails-criteria div.full { background-color: red; }
+
+.two-column ul { margin-left: 0px; }
+.two-column li { margin-right: 10px; }
+
+.recruitment-header h2 { font-size: 16px; }
+.recruitment-header .rank-bar, .campaigns .rank-bar { background-color: #04B404; }
+.recruitment-header .selected-rank, .campaigns .selected-rank { background-color: #40FF00; }
+
+.campaigns .campaign-message-intro { font-size: 14px; }
+.province-name a { color: #CCC; }
+.province-name a:hover { color: #fff; }
